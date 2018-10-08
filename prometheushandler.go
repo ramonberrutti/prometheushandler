@@ -45,8 +45,7 @@ var (
 )
 
 func init() {
-	// prometheus.MustRegister(httpRequestsTotal, httpRequestDuration, httpRequestSize, httpResponseSize)
-	prometheus.MustRegister()
+	prometheus.MustRegister(httpRequestsTotal, httpRequestDuration, httpRequestSize, httpResponseSize)
 }
 
 // PromRequestHandler return a handler Func
